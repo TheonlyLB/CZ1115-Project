@@ -7,7 +7,7 @@ NTU AY22/23 Semester 2 CZ1115/SC1015 DSAI Mini Project - Student Success Predict
 
 
 - [GitHub Repository](https://github.com/TheonlyLB/CZ1115-Project)
-- [Presentation Video](insert video url here)
+- [Presentation Video](https://youtu.be/vmEp6Zl6Hs0)
 
 ## Team Members
 
