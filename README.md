@@ -48,31 +48,31 @@ Regular data points require more partitions to be isolated than an anomaly data 
 ## Optuna Hyperparameter Tuning for XGB
 The search spaces for the hyperparameters in Optuna tuning were set as such after several trials:
 
-params = {
-        'eval_metric': 'mlogloss', 
-        'objective': 'multi:softmax',
-        'max_depth': trial.suggest_int('max_depth', 5, 8),
-        'subsample': trial.suggest_discrete_uniform('subsample', 0.6, 1.0, 0.05),
-        'n_estimators': trial.suggest_int('n_estimators', 1800, 4000, 50),
-        'eta': trial.suggest_loguniform('eta', 0.005, 0.1),
-        'reg_alpha': trial.suggest_loguniform('reg_alpha', 1e-8, 1e-5),
-        'reg_lambda': trial.suggest_loguniform('reg_lambda', 1e-6, 0.5),
-        'min_split_loss': trial.suggest_loguniform('gamma', 1e-5, 1), 
-        'min_child_weight': trial.suggest_int('min_child_weight', 5, 15),
-        "colsample_bytree": trial.suggest_uniform("colsample_bytree", 0.1, 0.5)}
+params = {<br>
+        'eval_metric': 'mlogloss', <br>
+        'objective': 'multi:softmax',<br>
+        'max_depth': trial.suggest_int('max_depth', 5, 8),<br>
+        'subsample': trial.suggest_discrete_uniform('subsample', 0.6, 1.0, 0.05),<br>
+        'n_estimators': trial.suggest_int('n_estimators', 1800, 4000, 50),<br>
+        'eta': trial.suggest_loguniform('eta', 0.005, 0.1),<br>
+        'reg_alpha': trial.suggest_loguniform('reg_alpha', 1e-8, 1e-5),<br>
+        'reg_lambda': trial.suggest_loguniform('reg_lambda', 1e-6, 0.5),<br>
+        'min_split_loss': trial.suggest_loguniform('gamma', 1e-5, 1), <br>
+        'min_child_weight': trial.suggest_int('min_child_weight', 5, 15),<br>
+        "colsample_bytree": trial.suggest_uniform("colsample_bytree", 0.1, 0.5)}<br>
 
 
-Best trial hyperparameters:
-    max_depth: 5
-    subsample: 1.0
-    n_estimators: 3800
-    eta: 0.09952475990974284
-    reg_alpha: 9.778562186840526e-07
-    reg_lambda: 0.05099229063943839
-    gamma: 0.0037642422353443006
-    min_child_weight: 8
-    colsample_bytree: 0.4609258070899312
-Resulting mlogloss: 0.5269664308760176
+Best trial hyperparameters:<br>
+    max_depth: 5<br>
+    subsample: 1.0<br>
+    n_estimators: 3800<br>
+    eta: 0.09952475990974284<br>
+    reg_alpha: 9.778562186840526e-07<br>
+    reg_lambda: 0.05099229063943839<br>
+    gamma: 0.0037642422353443006<br>
+    min_child_weight: 8<br>
+    colsample_bytree: 0.4609258070899312<br>
+Resulting mlogloss: 0.5269664308760176<br>
 
 ## Results 
 ### XGB
@@ -83,7 +83,7 @@ Accuracy of 0.79
 Accuracy of 0.74
 
 ## Contributions:
-Wynette: Parameter Tuning,Script, Video
-Russell: EDA, Feature Engineering, Script, Slides
-Zon: Models, Experimentation, Visualisation
+Wynette: Parameter Tuning,Script, Video<br>
+Russell: EDA, Feature Engineering, Script, Slides<br>
+Zon: Models, Experimentation, Visualisation<br>
 
