@@ -34,11 +34,11 @@ After identifying the incomplete data points from the exploratory data analysis,
 
 ## Feature Engineering with FeatureTools
 
-ML Methods
-## XGBoost: eXtreme Gradient Boosting
+## ML Methods
+### XGBoost: eXtreme Gradient Boosting
 XGBoost uses boosting with gradient descent to produce highly accurate results on structured data in both classification and regression problems. It is an ensemble learning method, where base learners such as shallow decision trees are trained on subsets of data and combined sequentially to correct the errors of the previous one.
 
-## Isolation Forests
+### Isolation Forests
 Isolation Forest shows better time complexity/scalability compared to other anomaly detection methods, as measured by the training time required/performance as data dimensionality increases. 
 
 It is an unsupervised anomaly detection algorithm based on random forests to detect outliers in the dataset. It partitions the data points until each observation is isolated.
@@ -47,8 +47,9 @@ Regular data points require more partitions to be isolated than an anomaly data 
 
 ## Optuna Hyperparameter Tuning for XGB
 The search spaces for the hyperparameters in Optuna tuning were set as such after several trials:
+
 params = {
-        'eval_metric': 'mlogloss',
+        'eval_metric': 'mlogloss', 
         'objective': 'multi:softmax',
         'max_depth': trial.suggest_int('max_depth', 5, 8),
         'subsample': trial.suggest_discrete_uniform('subsample', 0.6, 1.0, 0.05),
@@ -59,6 +60,7 @@ params = {
         'min_split_loss': trial.suggest_loguniform('gamma', 1e-5, 1), 
         'min_child_weight': trial.suggest_int('min_child_weight', 5, 15),
         "colsample_bytree": trial.suggest_uniform("colsample_bytree", 0.1, 0.5)}
+
 
 Best trial hyperparameters:
     max_depth: 5
@@ -73,11 +75,11 @@ Best trial hyperparameters:
 Resulting mlogloss: 0.5269664308760176
 
 ## Results 
-XGB
-Achieved mlogloss of 0.527 compared to dumb log-loss benchmark of 1.02 
+### XGB
+Achieved mlogloss of 0.527 compared to dumb log-loss benchmark of 1.02 <br>
 Accuracy of 0.79
 
-ISOLATION FOREST
+### ISOLATION FOREST
 Accuracy of 0.74
 
 ## Contributions:
