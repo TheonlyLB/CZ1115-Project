@@ -46,6 +46,8 @@ It is an unsupervised anomaly detection algorithm based on random forests to det
 Regular data points require more partitions to be isolated than an anomaly data point. The number of partitions needed/anomaly score is computed for all data points and compared to a threshold value.
 
 ## Optuna Hyperparameter Tuning for XGB
+Optuna is an automatic hyperparameter optimisation framework that is capable of generating the optimal set of hyperparameters.
+
 The search spaces for the hyperparameters in Optuna tuning were set as such after several trials:
 
 params = {<br>
@@ -60,7 +62,6 @@ params = {<br>
         'min_split_loss': trial.suggest_loguniform('gamma', 1e-5, 1), <br>
         'min_child_weight': trial.suggest_int('min_child_weight', 5, 15),<br>
         "colsample_bytree": trial.suggest_uniform("colsample_bytree", 0.1, 0.5)}<br>
-
 
 Best trial hyperparameters:<br>
     max_depth: 5<br>
