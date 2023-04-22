@@ -22,15 +22,15 @@ Team 1 Lab Group A121
 ## Describe, justify problem
 Predicting students’ dropout and academic success allows for early intervention and support to be provided to at risk students. Dropout reduces job prospects and lowers lifetime earnings, while increasing healthcare costs and reducing economic productivity for society. The problem is formulated as a three category classification task (dropout, enrolled, and graduate) for XGB and as an anomaly(dropout) detection problem for Isolation Forest.
 
-## EDA
+## Exploratory data analysis (EDA)
 The dataset is from the Polytechnic Institute of Portalegre related to students enrolled in different undergraduate degrees. It contains 4424 records with 35 attributes. 
 
 There is no ordinality in the values of variables such as ‘Mother/Father’s qualifications’ and ‘Mother/Father’s occupation’.
 
-The data set also contains data points where the ‘Mother’s occupation’ and ‘Father’s occupation are unknown.
+The data set also contains data points where the ‘Mother’s occupation’ and ‘Father’s occupation' are unknown.
 
 ## Preprocessing
-After identifying the incomplete data points from the exploratory data analysis, we replace the unknown qualification levels with the median qualification level correspondingly. 
+After identifying the incomplete data points from the eda, we replace the unknown qualification levels with the median qualification level correspondingly. 
 
 ## Feature Engineering with FeatureTools
 
@@ -83,7 +83,7 @@ Accuracy of 0.79
 Accuracy of 0.74
 
 ## Contributions:
-Wynette: Parameter Tuning,Script, Video<br>
-Russell: EDA, Feature Engineering, Script, Slides<br>
+Wynette: EDA, Parameter Tuning, Script, Video<br>
+Russell: Feature Engineering, Script, Slides<br>
 Zon: Models, Experimentation, Visualisation<br>
 
