@@ -2,9 +2,7 @@
 
 NTU AY22/23 Semester 2 CZ1115/SC1015 DSAI Mini Project - Student Success Prediction: Enhancing Retention, Performance, and Accessibility using Machine Learning
 
-
 ## Links
-
 
 - [GitHub Repository](https://github.com/TheonlyLB/CZ1115-Project)
 - [Presentation Video](https://youtu.be/vmEp6Zl6Hs0)
@@ -20,7 +18,7 @@ Team 1 Lab Group A121
 | Zon Liew Hur Zhen  | [TheonlyLB](https://github.com/TheonlyLB)
   
 ## Describe, justify problem
-Predicting students’ dropout and academic success allows for early intervention and support to be provided to at risk students. Dropout reduces job prospects and lowers lifetime earnings, while increasing healthcare costs and reducing economic productivity for society. The problem is formulated as a three category classification task (dropout, enrolled, and graduate) for XGB and as an anomaly(dropout) detection problem for Isolation Forest.
+Predicting students’ dropout and academic success allows for early intervention and support to be provided to at risk students. Dropout reduces job prospects and lowers lifetime earnings, while increasing healthcare costs and reducing economic productivity for society. The problem is formulated as a three category classification task (dropout, enrolled, and graduate) for XGB and as an anomaly (dropout) detection problem for Isolation Forest.
 
 ## Exploratory data analysis (EDA)
 The dataset is from the Polytechnic Institute of Portalegre related to students enrolled in different undergraduate degrees. It contains 4424 records with 35 attributes. 
@@ -88,6 +86,12 @@ Accuracy of 0.79
 
 ### ISOLATION FOREST
 Accuracy of 0.74
+
+## Further analysis using XGB
+Since XGB was a better, more accurate model, we used their feature importance function to generated the most important features used to predict student dropout. The results generated showed that 'Tution fees up to date', 'Curricular units 1st sem (approved)', 'Curricular units 2nd sem (approved)' were the top 3 most important features respectively. 
+
+## Insights
+Financial factors and workload have the most impact on student dropout rates.
 
 ## Contributions:
 Wynette: EDA, Parameter Tuning, Script, Video<br>
