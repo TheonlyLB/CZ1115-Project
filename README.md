@@ -27,10 +27,10 @@ The dataset is from the Polytechnic Institute of Portalegre related to students 
 
 There is no ordinality in the values of variables such as ‘Mother/Father’s qualifications’ and ‘Mother/Father’s occupation’.
 
-The data set also contains data points where the ‘Mother’s occupation’ and ‘Father’s occupation' are unknown.
+The data set also contains data points where the ‘Mother/Father’s occupation’ and ‘Mother/Father’s qualification' are unknown.
 
 ### Preprocessing
-After identifying the incomplete data points from the EDA, we replace the unknown qualification levels with the median qualification level correspondingly. 
+After identifying the incomplete data points from the EDA, we replace the unknown qualification levels and occupations with their respective median qualification levels / occupations correspondingly. 
 
 ## Feature Engineering with FeatureTools
 
