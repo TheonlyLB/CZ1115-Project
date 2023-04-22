@@ -25,12 +25,16 @@ Predicting students’ dropout and academic success allows for early interventio
 ## Exploratory data analysis (EDA)
 The dataset is from the Polytechnic Institute of Portalegre related to students enrolled in different undergraduate degrees. It contains 4424 records with 35 attributes. 
 
+There are 34 predictor variables and 1 response variable labelled "Target" which consists of values 'Graduate', 'Enrolled' and 'Dropout'.
+
 There is no ordinality in the values of variables such as ‘Mother/Father’s qualifications’ and ‘Mother/Father’s occupation’.
 
 The data set also contains data points where the ‘Mother/Father’s occupation’ and ‘Mother/Father’s qualification' are unknown.
 
 ### Preprocessing
 After identifying the incomplete data points from the EDA, we replace the unknown qualification levels and occupations with their respective median qualification levels / occupations correspondingly. 
+
+We also normalised the numerical features with StandardScaler to reduce the differences between different columns.
 
 ## Feature Engineering with FeatureTools
 
