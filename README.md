@@ -29,8 +29,8 @@ There is no ordinality in the values of variables such as ‘Mother/Father’s q
 
 The data set also contains data points where the ‘Mother’s occupation’ and ‘Father’s occupation' are unknown.
 
-## Preprocessing
-After identifying the incomplete data points from the eda, we replace the unknown qualification levels with the median qualification level correspondingly. 
+### Preprocessing
+After identifying the incomplete data points from the EDA, we replace the unknown qualification levels with the median qualification level correspondingly. 
 
 ## Feature Engineering with FeatureTools
 
@@ -86,4 +86,12 @@ Accuracy of 0.74
 Wynette: EDA, Parameter Tuning, Script, Video<br>
 Russell: Feature Engineering, Script, Slides<br>
 Zon: Models, Experimentation, Visualisation<br>
+
+## References: 
+https://www.graphpad.com/support/faq/what-is-the-difference-between-ordinal-interval-and-ratio-variables-why-should-i-care/
+https://en.wikipedia.org/wiki/Education_in_Portugal
+https://thebestschools.org/degrees/college-degree-levels/
+https://optuna.readthedocs.io/en/stable/
+https://practicaldatascience.co.uk/machine-learning/how-to-use-optuna-for-xgboost-hyperparameter-tuning
+
 
