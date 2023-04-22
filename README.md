@@ -38,6 +38,8 @@ We also normalised the numerical features with StandardScaler to reduce the diff
 
 ## Feature Engineering with FeatureTools
 
+FeatureTools is an open-source Python library for automated feature engineering, which automatically generates new features from our dataset by performing deep feature synthesis. Feature engineering is the process of transforming raw data into features that can be used by machine learning algorithms to improve their predictive accuracy.
+
 ## ML Methods
 ### XGBoost: eXtreme Gradient Boosting
 XGBoost uses boosting with gradient descent to produce highly accurate results on structured data in both classification and regression problems. It is an ensemble learning method, where base learners such as shallow decision trees are trained on subsets of data and combined sequentially to correct the errors of the previous one.
