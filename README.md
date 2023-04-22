@@ -90,7 +90,7 @@ Accuracy of 0.74
 ## Further analysis using XGB
 Since XGB was a better, more accurate model, we used their feature importance function to generate the most important features used to predict student dropout. The results generated showed that 'Tuition fees up to date', 'Curricular units 1st sem (approved)', 'Curricular units 2nd sem (approved)' were the top 3 most important features respectively. 
 
-## Insights
+## Conclusion
 Financial factors and workload have the most impact on student dropout rates.
 
 ## Contributions:
